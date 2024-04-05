@@ -111,6 +111,7 @@ export class PTUPokemonSheet extends PTUActorSheet {
 		const capabilities = [];
 		const items = [];
 		const edges = [];
+		const feats = [];
 		const effects = [];
 		const conditions = this.actor.conditions;
 		const contestmoves = [];
@@ -128,8 +129,11 @@ export class PTUPokemonSheet extends PTUActorSheet {
 				case 'capability':
 					capabilities.push(i);
 					break;
-				case 'pokeedge':
+				case 'edge':
 					edges.push(i);
+					break;
+				case 'feat':
+					feats.push(i);
 					break;
 				case 'effect':
 					effects.push(i);
@@ -150,6 +154,7 @@ export class PTUPokemonSheet extends PTUActorSheet {
 		sheetData.abilities = abilities;
 		sheetData.capabilities = capabilities;
 		sheetData.edges = edges;
+		sheetData.feats = feats;
 		sheetData.effects = effects;
 		sheetData.conditions = conditions;
 		sheetData.contestmoves = contestmoves;
