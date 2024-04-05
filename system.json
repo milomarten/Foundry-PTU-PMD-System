@@ -7,7 +7,7 @@
     "verified": "12.316",
     "maximum": 12
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "templateVersion": 2,
   "authors": [
     {
@@ -222,7 +222,7 @@
   ],
   "background": "systems/ptu/static/images/banner.webp",
   "url": "https://github.com/milomarten/Foundry-Pokemon-Tabletop-United-System",  
-  "manifest": "https://github.com/milomarten/Foundry-PTU-PMD-System/blob/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/milomarten/Foundry-PTU-PMD-System/master/system.json",
   "changelog": "https://github.com/milomarten/Foundry-PTU-PMD-System/raw/master/changelog.md",
   "download": "https://github.com/milomarten/Foundry-PTU-PMD-System/releases/latest/download/system.zip"
 }
