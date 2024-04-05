@@ -253,10 +253,10 @@ class PTUPokemonActor extends PTUActor {
         // Calculate Skill Ranks
         for (const [key, skill] of Object.entries(speciesSystem?.skills ?? {})) {
             system.skills[key].slug = key;
-            system.skills[key]["value"]["value"] = skill["value"]
-            system.skills[key]["value"]["total"] = skill["value"] + system.skills[key]["value"]["mod"];
-            system.skills[key]["modifier"]["value"] = skill["modifier"]
-            system.skills[key]["modifier"]["total"] = skill["modifier"] + system.skills[key]["modifier"]["mod"] + (system.modifiers.skillBonus?.total ?? 0);
+            // system.skills[key]["value"]["value"] = skill["value"]
+            system.skills[key]["value"]["total"] = system.skills[key]["value"]["value"] + system.skills[key]["value"]["mod"];
+            // system.skills[key]["modifier"]["value"] = skill["modifier"]
+            system.skills[key]["modifier"]["total"] = system.skills[key]["modifier"]["value"] + system.skills[key]["modifier"]["mod"] + (system.modifiers.skillBonus?.total ?? 0);
             system.skills[key]["rank"] = PTUSkills.getRankSlug(system.skills[key]["value"]["total"]);
             this.attributes.skills[key] = this.prepareSkill(key);// PTUSkills.calculate({actor: this, context: {skill: key, options: []}})
         }
