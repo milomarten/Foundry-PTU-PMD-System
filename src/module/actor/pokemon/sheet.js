@@ -20,6 +20,7 @@ export class PTUPokemonSheet extends PTUActorSheet {
 			submitOnChange: true,
 			scrollY: [".sheet-body"]
 		});
+		
 
 		// If compact style is enabled
 		if (true) {
